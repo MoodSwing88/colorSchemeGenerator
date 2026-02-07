@@ -1,22 +1,27 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>color-scheme-generator</title>
   </head>
   <body>
-    <form>
-      <input type="color" id="color"/>
-      <select>
-        <option value="monochrome">Monochrome</option>
-        <option value="monochrome-dark">Monochrome-dark</option>
-        <option value="monochrome-light">Monochrome-light</option>
-        <option value="analogic">Analogic</option>
-        <option value="complement">Complement</option>
-        <option value="analogic-complement">Analogic-complement</option>
-        <option value="triad">Triad</option>
-      </select>
-      <button id="get-color">Get color scheme</button>
-    </form>
+    <div class="app">
+      <form class="form">
+        <input type="color" id="color"/>
+        <select class="select">
+          <option value="monochrome">Monochrome</option>
+          <option value="monochrome-dark">Monochrome-dark</option>
+          <option value="monochrome-light">Monochrome-light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-complement</option>
+          <option value="triad">Triad</option>
+        </select>
+        <button id="get-color">Get color scheme</button>
+      </form>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -1,4 +1,55 @@
 html, body {
   border: 0;
   margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.app {
+  height: 550px;
+  width: 550px;
+  background-color: #1F2937;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 25px 15px;
+}
+
+input{
+  height: 35px;
+}
+
+.select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: #1F2937;
+  color: white;
+  border: 1px solid #555;
+  padding: 6px 10px;
+  width: 350px;
+  border-radius: 5px;
+  
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M7 10l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 14px;
+}
+
+
+
+button {
+  background-color: #3D4B60;
+  color: white;
+  border: none;
+  font-size: 10px;
+  padding: 8px;
+  border-radius: 5px;
 }
