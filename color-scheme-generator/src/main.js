@@ -5,7 +5,7 @@ const option = document.getElementById('select')
 const btn = document.getElementById('get-color')
 
 
-
+let colors
 btn.addEventListener('click', (event)=>{
     event.preventDefault();
 
@@ -16,6 +16,8 @@ btn.addEventListener('click', (event)=>{
    
     fetch(`https://www.thecolorapi.com/scheme?hex=${hex}&format=json&mode=${chosenMode}&count=5`)
     .then(res => res.json())
-    .then(data => console.log(data))
-    
+    .then(data => {
+        colors = data.colors.map(c => c.hex.value)
+        console.log(colors)
+    })
 })
